@@ -25,3 +25,25 @@ ClaimNOVA                                     Root directory
 └── README.md
 
 </pre>
+## Dependency packages
+System environment is set up according to the following configuration:
+- transformers==4.56.2
+- nltk==3.6.7
+- matplotlib==3.5.1
+- scikit-learn==1.1.3
+- pytorch==2.10.0
+- tqdm==4.65.0
+- numpy==1.24.1
+- pandas==2.2.3
+- openai==1.53.0
+- vllm==0.19.0
+- sentence-transformers==5.3.0
+- ai_researcher
+- PyMuPDF=1.27.2.2
+- scientific-information-change
+- langchain=1.2.14
+Data on ACL Anthology can be obtained here: https://github.com/tangg555/acl-anthology-helper
+## Acknowledgement
+ClaimNOVA is intended to assist reviewers, not replace them. 
+## Citation
+Please cite the following paper if you use this code and dataset in your work.
