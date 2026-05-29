@@ -26,8 +26,10 @@ ClaimNOVA                                     Root directory
 
 </pre>
 ## Run
+<pre>
 python build_background_llm.py
-
+</pre>
+<pre>
 python build_background_card.py \
   --input_dir /background_raw_store \
   --output_dir /background_card_store \
@@ -38,7 +40,8 @@ python build_background_card.py \
   --max_new_tokens 256 \
   --llm_batch_size 8 \
   --trust_remote_code
-
+</pre>
+<pre>
 python run_multi_agent_novelty_pipeline_v7.py \
   --target_papers_json /dataset.json \
   --background_card_dir /background_card_store \
@@ -50,7 +53,7 @@ python run_multi_agent_novelty_pipeline_v7.py \
   --selector_prefilter_k 12 \
   --selector_final_k 5 \
   --trust_remote_code
-
+</pre>
 ## Dependency packages
 System environment is set up according to the following configuration:
 - transformers==4.56.2
