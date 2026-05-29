@@ -29,10 +29,10 @@ ClaimNOVA                                     Root directory
 python build_background_llm.py
 
 python build_background_card.py \
-  --input_dir /gpfs/scratch/qc25257/background_raw_store \
-  --output_dir /gpfs/scratch/qc25257/background_card_store \
-  --card_model /gpfs/scratch/qc25257/local_model/Qwen3-14B \
-  --embed_model /gpfs/scratch/qc25257/local_model/all-MiniLM-L6-v2 \
+  --input_dir /background_raw_store \
+  --output_dir /background_card_store \
+  --card_model /local_model/Qwen3-14B \
+  --embed_model /all-MiniLM-L6-v2 \
   --tensor_parallel_size 1 \
   --max_model_len 8192 \
   --max_new_tokens 256 \
@@ -40,10 +40,10 @@ python build_background_card.py \
   --trust_remote_code
 
 python run_multi_agent_novelty_pipeline_v7.py \
-  --target_papers_json /gpfs/scratch/qc25257/dataset/Dataset_with_type.json \
-  --background_card_dir /gpfs/scratch/qc25257/background_card_store \
-  --output_dir /gpfs/scratch/qc25257/multi_agent_outputs_v7 \
-  --model /gpfs/scratch/qc25257/local_model/Qwen3-14B \
+  --target_papers_json /dataset.json \
+  --background_card_dir /background_card_store \
+  --output_dir /multi_agent_outputs \
+  --model /local_model/Qwen3-14B \
   --tensor_parallel_size 1 \
   --max_model_len 8192 \
   --max_new_tokens 1024 \
