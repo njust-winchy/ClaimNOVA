@@ -10,6 +10,7 @@ This is the official repository for the dataset and code of the paper: "ClaimNOV
 - Experiments on NovBench show that \textsc{ClaimNOVA} improves alignment with source novelty claims and coverage of human reviewer evaluations over zero-shot, few-shot, and RAG baselines. Further analyses reveal the roles of evidence grounding, novelty type, and claim-level evaluation, as well as trade-offs introduced by retrieval-augmented evidence..
 ## Dataset
 The dataset can be obtained from here ([https://drive.google.com/drive/folders/1VZTCcUngoBa4jC3skKgbcefyotuHY9Zc?usp=drive_link](https://drive.google.com/file/d/17eCOU_WUUYIlg7V_hf1ERcDX7pZxiBs_/view?usp=drive_link)).<br>
+Data on ACL Anthology can be obtained here: https://github.com/tangg555/acl-anthology-helper.<br>
 <pre>
 ClaimNOVA                                     Root directory
 ├── Evaluation.py                             Code for processing the result
@@ -42,7 +43,6 @@ System environment is set up according to the following configuration:
 - PyMuPDF=1.27.2.2
 - scientific-information-change
 - langchain=1.2.14
-Data on ACL Anthology can be obtained here: https://github.com/tangg555/acl-anthology-helper
 ## Acknowledgement
 ClaimNOVA is intended to assist reviewers, not replace them. 
 ## Citation
