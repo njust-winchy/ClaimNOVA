@@ -9,4 +9,4 @@ This is the official repository for the dataset and code of the paper: "ClaimNOV
 - We use novelty type as a structured prior for evidence selection and type-aware comparison. This helps compare different claims with more appropriate prior work. <br>
 - Experiments on NovBench show that \textsc{ClaimNOVA} improves alignment with source novelty claims and coverage of human reviewer evaluations over zero-shot, few-shot, and RAG baselines. Further analyses reveal the roles of evidence grounding, novelty type, and claim-level evaluation, as well as trade-offs introduced by retrieval-augmented evidence..
 ## Dataset
-The raw data and calculated data can be obtained from here ([https://drive.google.com/drive/folders/1VZTCcUngoBa4jC3skKgbcefyotuHY9Zc?usp=drive_link](https://drive.google.com/file/d/17eCOU_WUUYIlg7V_hf1ERcDX7pZxiBs_/view?usp=drive_link)).<br>
+The dataset can be obtained from here ([https://drive.google.com/drive/folders/1VZTCcUngoBa4jC3skKgbcefyotuHY9Zc?usp=drive_link](https://drive.google.com/file/d/17eCOU_WUUYIlg7V_hf1ERcDX7pZxiBs_/view?usp=drive_link)).<br>
