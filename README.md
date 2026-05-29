@@ -22,7 +22,6 @@ ClaimNOVA                                     Root directory
 ├── run_background_evidence_experiments.py    Code for background evidence experiments
 ├── run_multi_agent_novelty_pipeline.py       Code for multi agent novelty pipeline
 ├── run_novelty_type_stratified_analysis.py   Code for novelty type stratified analysis
-│
 └── README.md
 
 </pre>
