@@ -25,6 +25,32 @@ ClaimNOVA                                     Root directory
 └── README.md
 
 </pre>
+## Run
+python build_background_llm.py
+
+python build_background_card.py \
+  --input_dir /gpfs/scratch/qc25257/background_raw_store \
+  --output_dir /gpfs/scratch/qc25257/background_card_store \
+  --card_model /gpfs/scratch/qc25257/local_model/Qwen3-14B \
+  --embed_model /gpfs/scratch/qc25257/local_model/all-MiniLM-L6-v2 \
+  --tensor_parallel_size 1 \
+  --max_model_len 8192 \
+  --max_new_tokens 256 \
+  --llm_batch_size 8 \
+  --trust_remote_code
+
+python run_multi_agent_novelty_pipeline_v7.py \
+  --target_papers_json /gpfs/scratch/qc25257/dataset/Dataset_with_type.json \
+  --background_card_dir /gpfs/scratch/qc25257/background_card_store \
+  --output_dir /gpfs/scratch/qc25257/multi_agent_outputs_v7 \
+  --model /gpfs/scratch/qc25257/local_model/Qwen3-14B \
+  --tensor_parallel_size 1 \
+  --max_model_len 8192 \
+  --max_new_tokens 1024 \
+  --selector_prefilter_k 12 \
+  --selector_final_k 5 \
+  --trust_remote_code
+
 ## Dependency packages
 System environment is set up according to the following configuration:
 - transformers==4.56.2
