@@ -27,7 +27,7 @@ ClaimNOVA                                     Root directory
 </pre>
 ## Run
 <pre>
-python build_background_llm.py
+python build_background.py
 </pre>
 <pre>
 python build_background_card.py \
